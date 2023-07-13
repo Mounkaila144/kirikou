@@ -1,0 +1,195 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <div class="main-banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="owl-carousel owl-banner">
+                                <div class="item header-text">
+                                    <h6>Le leadership de Kirikou</h6>
+                                    <h2>Découvrez un livre captivant sur le leadership</h2>
+                                    <p>Plongez dans l'univers fascinant de Kirikou, un jeune héros qui incarne les qualités essentielles d'un véritable leader. Explorez les pages du courage, de la sagesse et de l'empathie dans 'Le leadership de Kirikou'.</p>
+                                    <div class="down-buttons">
+                                        <div class="main-blue-button-hover">
+                                            <a href="commander.html">Commandez votre exemplaire</a>
+                                        </div>
+                                        <div class="call-button mt-x">
+                                            <a href="apropos.html"><i class="fa fa-book"></i> En savoir plus</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="portfolio" class="our-portfolio section">
+        <div class="portfolio-left-dec">
+            <img src="assets/images/portfolio-left-dec.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+
+                    <div class="section-heading">
+                        <h2>Nos Récents <em>Ventes Du Livre</em> &amp; <span>Nos Clients Satisfaits</span></h2>
+                        <span>Nos Clients Satisfaits</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl-carousel owl-portfolio">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/images/sell/a1.jpeg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/images/sell/a2.jpeg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/images/sell/a3.jpeg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/images/sell/a4.jpeg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/images/sell/a5.jpeg') }}" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="pricing" class="pricing-tables">
+        <div class="tables-left-dec">
+            <img src="assets/images/tables-left-dec.png" alt="">
+        </div>
+        <div class="tables-right-dec">
+            <img src="assets/images/tables-right-dec.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Choisissez un <em>plan adapté</em> pour votre <span>Achat</span></h2>
+                        <span>Nos Offres</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="item first-item">
+                        <h4>Bronze</h4>
+                        <span>10.000 CFA</span>
+                        <ul>
+                            <li>1 Livre</li>
+                            <li>X Tickets</li>
+                            <li>X Conferences</li>
+                        </ul>
+                        <div class="main-blue-button-hover">
+                            <a href="#">Acheter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="item first-item">
+                        <h4>Silver</h4>
+                        <span>25.000 CFA</span>
+                        <ul>
+                            <li>1 Livre</li>
+                            <li>1 Tickets</li>
+                            <li>X Conferences</li>
+                        </ul>
+                        <div class="main-blue-button-hover">
+                            <a href="#">Acheter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="item first-item">
+                        <h4>Gold</h4>
+                        <span>50.000 CFA</span>
+                        <ul>
+                            <li>3 Livre</li>
+                            <li>2 Tickets</li>
+                            <li>X Conferences</li>
+                        </ul>
+                        <div class="main-blue-button-hover">
+                            <a href="#">Acheter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="item first-item">
+                        <h4>Platine</h4>
+                        <span>100.000 CFA</span>
+                        <ul>
+                            <li>5 Livre</li>
+                            <li>3 Tickets</li>
+                            <li>1 Conferences</li>
+                        </ul>
+                        <div class="main-blue-button-hover">
+                            <a href="#">Acheter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                    <div class="item first-item">
+                        <h4>Diamond</h4>
+                        <span>500.000 CFA</span>
+                        <ul>
+                            <li>20 Livre</li>
+                            <li>10 Tickets</li>
+                            <li>3 Conferences</li>
+                        </ul>
+                        <div class="main-blue-button-hover">
+                            <a href="#">Acheter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <div class="row">
+
+                                {{ include('/achat/_form.html.twig') }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
