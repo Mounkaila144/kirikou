@@ -2,20 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <title>{% block title %}Le leadership de Kirikou{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23652f18'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 20v2H5v-2H2V4h2V2h14v2h2v16h-2zM5 5v14h14V5H5zm2 2h10v10H7V7zm2 2v2h2V9h2v2h-2v2h-2V9H9zm0 4h2v2H9v-2zm0-4v2h2V9H9z'/%3E%3C/svg%3E">
+
         {% block stylesheets %}
+            <!-- Inclure ici les liens vers les fichiers CSS personnalisés -->
         {% endblock %}
 
         {% block javascripts %}
+            <!-- Inclure ici les liens vers les fichiers JavaScript personnalisés -->
         {% endblock %}
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="preconnect" href="../fonts.gstatic.com/index.html">
-        <link href="../fonts.googleapis.com/css283ac.css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
-        <title>NFT Portfolio Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Découvrez 'Le leadership de Kirikou', un livre captivant qui explore les principes du leadership à travers les aventures inoubliables de Kirikou. Plongez dans un monde où le courage, la sagesse et l'empathie">
+        <meta name="keywords" content="le leadership de kirikou, livre, leadership, courage, sagesse, empathie">
+        <meta name="author" content="Votre nom ou celui de l'auteur du livre">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
         <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -55,10 +59,11 @@
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="{{ path('app_home') }}" class="active">Menu</a></li>
-                            <li class="scroll-to-section"><a href="services.html">Services</a></li>
-                            <li class="scroll-to-section"><a href="about.html">Apropos de Nous</a></li>
-                            <li class="scroll-to-section"><div class="main-red-button-hover"><a href="contact.html">Nous Contacter</a></div></li>
+                            <li class="scroll-to-section"><a href="#" class="active">Menu</a></li>
+                            <li class="scroll-to-section"><a href="#" class="service">Plans</a></li>
+                            <li class="scroll-to-section"><a href="#" class="about">Apropos de Nous</a></li>
+                            <li class="scroll-to-section"><a href="#" class="commande">Commande</a></li>
+                            <li class="scroll-to-section"><div class="main-red-button-hover commande"><a href="#">Nous Contacter</a></div></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -80,5 +85,36 @@
         <script src="{{asset('assets/js/animation.js')}}"></script>
         <script src="{{asset('assets/js/imagesloaded.js')}}"></script>
         <script src="{{asset('assets/js/custom.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.service').click(function(e) {
+                e.preventDefault();
+                // Faites quelque chose lorsque le bouton Services est cliqué
+                // Par exemple, faites défiler vers la section correspondante
+                scrollToSection('#service');
+            });
+
+            $('.about').click(function(e) {
+                e.preventDefault();
+                // Faites quelque chose lorsque le bouton À Propos de Nous est cliqué
+                // Par exemple, faites défiler vers la section correspondante
+                scrollToSection('#about');
+            });
+
+            $('.commande').click(function(e) {
+                e.preventDefault();
+                // Faites quelque chose lorsque le bouton Commandes est cliqué
+                // Par exemple, faites défiler vers la section correspondante
+                scrollToSection('#commande');
+            });
+
+            function scrollToSection(sectionId) {
+                $('html, body').animate({
+                    scrollTop: $(sectionId).offset().top
+                }, 1000);
+            }
+        });
+
+    </script>
     </body>
 </html>

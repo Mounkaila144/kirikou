@@ -294,11 +294,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #ff685f!important;
+  color: #652f18!important;
 }
 
 .background-header .nav li a.active {
-  color: #ff685f!important;
+  color: #652f18!important;
 }
 
 .header-area {
@@ -404,12 +404,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #ff685f!important;
+  color: #652f18!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #ff685f!important;
+  color: #652f18!important;
   opacity: 1;
 }
 
@@ -471,7 +471,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #ff685f!important;
+  color: #652f18!important;
   padding-left: 25px;
 }
 
@@ -611,7 +611,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff685f;
+  color: #652f18;
 }
 
 @media (max-width: 1200px) {
@@ -646,7 +646,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #ff685f!important;
+    color: #652f18!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -707,7 +707,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #ff685f!important;
+    color: #652f18!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -969,8 +969,8 @@ Banner Style
 }
 
 .main-banner .active:before {
-  color: #ff685f;
-  border-bottom: 3px solid #ff685f;
+  color: #652f18;
+  border-bottom: 3px solid #652f18;
 }
 
 
@@ -1772,7 +1772,7 @@ contact
   margin-bottom: 30px;
   padding: 20px 10px;
   background: #fff;
-  border: 2px solid #ff7b63;
+  border: 2px solid #652f18;
   border-radius: 20px;
   position: relative;
   z-index: 5;
@@ -1803,7 +1803,7 @@ contact
 }
 
 .contact-us .info span a {
-  color: #ff685f;
+  color: #652f18;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
@@ -1819,7 +1819,7 @@ contact
   background-position: center center;
   background-size: cover;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  padding: 60px 120px;
+  padding: 10px 80px;
   border-radius: 20px;
 }
 
