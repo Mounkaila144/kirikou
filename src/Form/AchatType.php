@@ -20,11 +20,12 @@ class AchatType extends AbstractType
             ->add('abonnement', ChoiceType::class, [
                 'choices' => [
                     'Bronze' => 'bronze',
-                    'Gold' => 'gold',
-                    'Diamond' => 'diamond',
                     'Silver' => 'silver',
+                    'Gold' => 'gold',
+                    'Platine' => 'platine',
+                    'Diamond' => 'diamond',
                 ],
-            ])        ;
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver): void

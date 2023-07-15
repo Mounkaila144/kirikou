@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-12">
         <div class="card" style="border-radius: 10px">
-            <div class="card-title"><h2 class="text-center">Commander ton Livre</h2></div>
+            <div class="card-title"><h2 class="text-center">Commander ton Coffret</h2></div>
             <div class="card-body">
                 {{ form_start(form) }}
 
@@ -33,21 +33,19 @@
                         </fieldset>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
                         <fieldset>
                             Plan
-                            {{ form_widget(form.abonnement, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_widget(form.abonnement, {'attr': {'class': 'form-control text-center'}}) }}
                         </fieldset>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
+                    <div class="text-center mt3">
                         <fieldset>
-                            <button type="submit" id="form-submit" class="main-button">Commander</button>
+                            <button type="submit" id="form-submit" class="main-button">Valider</button>
                         </fieldset>
                     </div>
-                </div>
                 {{ form_end(form) }}
             </div>
         </div>
