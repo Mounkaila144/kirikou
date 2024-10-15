@@ -7,7 +7,7 @@
         <img style="margin-top: 50px" src="{{ asset('assets/images/kirikou-bg.jpg') }}">
     </div>
     <div class="d-flex d-lg-none">
-        <img style="margin-top: 70px" src="{{ asset('assets/images/mobile.jpg') }}">
+        <img style="margin-top: 70px" src="{{ asset('assets/images/mobile.jpeg') }}">
     </div>
     <div class="row mt-4" style="overflow-y: auto;height: 600px">
         <div class="d-none d-lg-flex">
@@ -21,178 +21,70 @@
     </div>
 
 
-    <div id="about">
 
-        <div id="portfolio" class="our-portfolio section">
-            <div class="portfolio-left-dec">
-                <img src="assets/images/portfolio-left-dec.png" alt="">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
 
-                        <div class="section-heading">
-                            <h2>Gagner en visibilité <em>en devenant</em> &amp; <span>Partenaire</span></h2>
-                            <span>Nos Coffrets</span>
-                        </div>
-
+    <div id="commande" class="py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="card shadow-lg" style="border-radius: 10px;">
+                    <div class="card-header  text-white text-center" style="border-top-left-radius: 10px; border-top-right-radius: 10px;background-color: #652f18">
+                        <h2>Commander votre Livre</h2>
                     </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="owl-carousel owl-portfolio">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="{{ asset('assets/images/sell/a1.jpeg') }}" alt="">
+                    <div class="card-body p-4">
+                        <form id="orderForm" action="{{ path('handle_form') }}" method="POST">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 mb-3">
+                                    <fieldset>
+                                        <label for="firstName" class="form-label">Prénom</label>
+                                        <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Votre prénom" required>
+                                        <input type="hidden" class="form-control"  name="livre" value="Le leadership de Kirikou">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-4 col-md-12 mb-3">
+                                    <fieldset>
+                                        <label for="lastName" class="form-label">Nom</label>
+                                        <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Votre nom" required>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-4 col-md-12 mb-3">
+                                    <fieldset>
+                                        <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
+                                        <input type="tel" class="form-control" id="phoneNumber" name="phone_number" placeholder="Votre numéro" required>
+                                    </fieldset>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="{{ asset('assets/images/sell/a2.jpeg') }}" alt="">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <fieldset>
+                                        <button type="submit" class="btn text-white  w-50 py-2" style="border-radius: 50px; background-color: #652f18">Commander</button>
+                                    </fieldset>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="{{ asset('assets/images/sell/a3.jpeg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="{{ asset('assets/images/sell/a4.jpeg') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="{{ asset('assets/images/sell/a5.jpeg') }}" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div id="service">
-        <div id="pricing" class="pricing-tables">
-            <div class="tables-left-dec">
-                <img src="assets/images/tables-left-dec.png" alt="">
-            </div>
-            <div class="tables-right-dec">
-                <img src="assets/images/tables-right-dec.png" alt="">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="section-heading">
-                            <h2>Choisissez un <em>plan adapté</em> à votre <span>budget</span></h2>
-                            <span>Nos Offres</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="item first-item">
-                            <h4>Bronze</h4>
-                            <span>10.000 CFA</span>
-                            <ul>
-                                <li>1 Livre</li>
-                                <li>Dédicacé par l'auteur</li>
-                                <li>.</li>
-                            </ul>
-                            <div class="main-blue-button-hover">
-                                <a class="commande" href="#">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="item first-item">
-                            <h4>Silver</h4>
-                            <span>25.000 CFA</span>
-                            <ul>
-                                <li>1 Livre</li>
-                                <li>1 Tickets</li>
-                                <li>.</li>
-                            </ul>
-                            <div class="main-blue-button-hover">
-                                <a class="commande" href="#">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="item first-item">
-                            <h4>Gold</h4>
-                            <span>50.000 CFA</span>
-                            <ul>
-                                <li>3 Livre</li>
-                                <li>2 Tickets</li>
-                                <li>.</li>
-                            </ul>
-                            <div class="main-blue-button-hover">
-                                <a class="commande" href="#">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="item first-item">
-                            <h4>Platine</h4>
-                            <span>100.000 CFA</span>
-                            <ul>
-                                <li>5 Livre</li>
-                                <li>3 Tickets</li>
-                                <li>1 Conference</li>
-                            </ul>
-                            <div class="main-blue-button-hover">
-                                <a class="commande" href="#">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-3">
-                        <div class="item first-item">
-                            <h4>Diamond</h4>
-                            <span>500.000 CFA</span>
-                            <ul>
-                                <li>20 Livre</li>
-                                <li>10 Tickets</li>
-                                <li>3 Conferences</li>
-                            </ul>
-                            <div class="main-blue-button-hover">
-                                <a class="commande" href="#">Commander</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div id="commande">
-        <div id="contact" class="contact-us section">
-            <div class="container">
-                <form class="contact-form" action="#" method="get">
-
-                </form>
-            </div>
-
+    <!-- Contact Section -->
+    <div id="contact" class="contact-us section py-5 bg-light">
+        <div class="container">
             <div class="section-heading p-5">
                 <h2 class="text-center">Contactez <em>Nous</em></h2>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="info text-center">
-                                <span><i class="fa fa-phone"></i> <a
-                                            href="#">+227 89 99 14 49<br>+227 94 20 34 34</a></span>
-                            <span><i class="fa fa-envelope"></i> <a href="#">ptrniger9@gmail.com<br>ptr-niger.com</a></span>
-                            <span><i class="fa fa-map-marker"></i> <a href="#">Niamey/Niger<br>Boukoki II</a></span>
-
+                        <span class="d-block mb-3"><i class="fa fa-phone"></i>
+                            <a href="#">+227 89 99 14 49<br>+227 94 20 34 34</a>
+                        </span>
+                            <span class="d-block mb-3"><i class="fa fa-envelope"></i>
+                            <a href="mailto:ptrniger9@gmail.com">ptrniger9@gmail.com<br>ptr-niger.com</a>
+                        </span>
+                            <span class="d-block"><i class="fa fa-map-marker"></i>
+                            <a href="#">Niamey/Niger<br>Boukoki II</a>
+                        </span>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -206,5 +98,37 @@
     </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('orderForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Empêche la soumission normale du formulaire
+
+                const formData = new FormData(form);
+
+                fetch('{{ path('handle_form') }}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest' // Optionnel, mais recommandé
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Remplacer le formulaire par un message de succès
+                            form.innerHTML = '<div class="alert alert-success" role="alert">' + data.message + '</div>';
+                        } else {
+                            // Afficher un message d'erreur
+                            form.innerHTML = '<div class="alert alert-danger" role="alert">' + data.message + '</div>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        form.innerHTML = '<div class="alert alert-danger" role="alert">Une erreur est survenue. Veuillez réessayer.</div>';
+                    });
+            });
+        });
+    </script>
 
 {% endblock %}

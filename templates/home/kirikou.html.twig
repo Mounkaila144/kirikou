@@ -454,95 +454,81 @@
                     </h2>
                 </div>
                 <div class="row">
-
                     <!--Start Single Service Three-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
                          data-wow-duration="1500ms">
-                        <div class="service-three__single">
+                        <div class="service-three__single" data-href="{{ path('app_kirikou') }}">
                             <div class="service-three__single-img">
-                                <img src="{{asset('assets2/img/service/service-three__img3.jpg')}}" alt="#" id="ldk">
-                                <div class="service-three__single-img-bg"></div>
-                            </div>
-                            <div class="service-three__single-content" >
-
-                                <div class="title">
-                                    <h3><a href="#" >LE LEADERSHIP DE KIRIKOU</a></h3>
-                                </div>
-                                <div class="text">
-                                    <p>
-                                        Un manuel auto-didactique pour un enseignement sur le Leadership.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Service Three-->
-                    <!--Start Single Service Three-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
-                         data-wow-duration="1500ms">
-                        <div class="service-three__single">
-                            <div class="service-three__single-img">
-                                <img src="{{asset('assets2/img/service/service-three__img2.jpg')}}" alt="#" id="pae">
+                                <img src="{{ asset('assets2/img/service/service-three__img3.jpg') }}" alt="#">
                                 <div class="service-three__single-img-bg"></div>
                             </div>
                             <div class="service-three__single-content">
                                 <div class="title">
-                                    <h3><a href="#" >LA PUISSANCE DE L'AUTOEDUCATION</a></h3>
+                                    <h3><a href="javascript:void(0)">LE LEADERSHIP DE KIRIKOU</a></h3>
                                 </div>
                                 <div class="text">
-                                    <p>
-                                        Une démarche psycho-métaphysique pour un succès responsable.
-                                    </p>
+                                    <p>Un manuel auto-didactique pour un enseignement sur le Leadership.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--End Single Service Three-->
+
+                    <!--Start Single Service Three-->
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
+                         data-wow-duration="1500ms">
+                        <div class="service-three__single" data-href="{{ path('app_kirikou') }}">
+                            <div class="service-three__single-img">
+                                <img src="{{ asset('assets2/img/service/service-three__img2.jpg') }}" alt="#">
+                                <div class="service-three__single-img-bg"></div>
+                            </div>
+                            <div class="service-three__single-content">
+                                <div class="title">
+                                    <h3><a href="javascript:void(0)">LA PUISSANCE DE L'AUTOEDUCATION</a></h3>
+                                </div>
+                                <div class="text">
+                                    <p>Une démarche psycho-métaphysique pour un succès responsable.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!--Start Single Service Three-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInRight" data-wow-delay="200ms"
                          data-wow-duration="1500ms">
-                        <div class="service-three__single" id="50ubc">
+                        <div class="service-three__single" data-href="{{ path('app_kirikou') }}">
                             <div class="service-three__single-img">
-                                <img src="{{asset('assets2/img/service/service-details-img3.jpg')}}" alt="#" id="50ubc">
+                                <img src="{{ asset('assets2/img/service/service-details-img3.jpg') }}" alt="#">
                                 <div class="service-three__single-img-bg"></div>
                             </div>
                             <div class="service-three__single-content">
-
                                 <div class="title">
-                                    <h3><a href="#" >50 UTILISATIONS DE LA BLOCKCHAIN</a></h3>
+                                    <h3><a href="javascript:void(0)">50 UTILISATIONS DE LA BLOCKCHAIN</a></h3>
                                 </div>
                                 <div class="text">
-                                    <p>
-                                        Un livre d'éducation financière et d'apprentissage technologique.
-                                    </p>
+                                    <p>Un livre d'éducation financière et d'apprentissage technologique.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--End Single Service Three-->
+
                     <!--Start Single Service Three-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="400ms"
                          data-wow-duration="1500ms">
-                        <div class="service-three__single" id="prt">
+                        <div class="service-three__single" data-href="{{ path('app_pouvoir') }}">
                             <div class="service-three__single-img">
-                                <img src="{{asset('assets2/img/service/service-three__img1.jpg')}}" alt="#" id="prt">
+                                <img src="{{ asset('assets2/img/service/service-three__img1.jpg') }}" alt="#">
                                 <div class="service-three__single-img-bg"></div>
                             </div>
                             <div class="service-three__single-content">
-
                                 <div class="title">
-                                    <h3><a href="#" >LE POUVOIR DE SE REVEILLER TOT</a></h3>
+                                    <h3><a href="javascript:void(0)">LE POUVOIR DE SE REVEILLER TOT</a></h3>
                                 </div>
                                 <div class="text">
-                                    <p>
-                                        Atteindre vos objectifs via la lecture de ce livre 100% Personnal Development.
-                                    </p>
+                                    <p>Atteindre vos objectifs via la lecture de ce livre 100% Personnal Development.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--End Single Service Three-->
-
                 </div>
             </div>
         </section>
@@ -1398,5 +1384,21 @@
         </div>
     </div>
     <!--End Search Popup -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sélectionne tous les éléments avec la classe 'service-three__single'
+        var serviceDivs = document.querySelectorAll('.service-three__single');
 
+        serviceDivs.forEach(function(div) {
+            // Ajoute un événement de clic à chaque élément
+            div.addEventListener('click', function() {
+                var href = div.getAttribute('data-href'); // Récupère la route du data-href
+                if (href) {
+                    window.location.href = href; // Redirige vers la route
+                }
+            });
+        });
+    });
+
+</script>
 {% endblock %}
