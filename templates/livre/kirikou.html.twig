@@ -32,12 +32,12 @@
                     </div>
                     <div class="card-body p-4">
                         <form id="orderForm" action="{{ path('handle_form') }}" method="POST">
+
                             <div class="row">
                                 <div class="col-lg-4 col-md-12 mb-3">
                                     <fieldset>
                                         <label for="firstName" class="form-label">Prénom</label>
                                         <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Votre prénom" required>
-                                        <input type="hidden" class="form-control"  name="livre" value="Le leadership de Kirikou">
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-4 col-md-12 mb-3">
@@ -53,6 +53,33 @@
                                     </fieldset>
                                 </div>
                             </div>
+
+                            <!-- Choix du Pack -->
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <fieldset>
+                                        <label for="pack" class="form-label">Choisir un Pack</label>
+                                        <select class="form-control" id="pack" name="pack" required>
+                                            <option value="1 livre + 1 PASS">1 Livre + 1 PASS - 19 800F</option>
+                                            <option value="2 livres + 3 PASS">2 Livres + 3 PASS - 50 800F</option>
+                                            <option value="5 livres + 5 PASS + 1 Formation">5 Livres + 5 PASS + 1 Formation - 208 000F</option>
+                                            <option value="10 livres + 10 PASS + 4 Formations">10 Livres + 10 PASS + 4 Formations - 508 000F</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <!-- Option pour ajouter un PASS -->
+                            <div class="row">
+                                <div class="col-12 mb-3">
+                                    <fieldset>
+                                        <label for="addPass" class="form-label">Ajouter 1 PASS pour 10 000F</label>
+                                        <input type="checkbox" id="addPass" name="add_pass" value="1"> Oui
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <input type="hidden" name="promoteur" value="{{ promoteur }}">
+
                             <div class="row">
                                 <div class="col-12 text-center">
                                     <fieldset>
@@ -61,6 +88,7 @@
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
